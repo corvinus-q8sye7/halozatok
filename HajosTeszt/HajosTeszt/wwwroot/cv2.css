@@ -1,0 +1,124 @@
+﻿* {
+    box-sizing: border-box;
+}
+body 
+   
+ {
+    font-weight: bold;
+    text-align: center;
+
+
+
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 25px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+    a:hover {
+        background-color: yellow;
+    }
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: fuchsia;
+    font-size: 40px;
+}
+
+#main {
+    background-color: lightgrey;
+}
+
+.megisfeher {
+    background-color: white;
+    border-radius: 25px;
+    width: 100px;
+}
+
+.sorrendi {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+
+#article,
+#aside,
+#footer,
+#header,
+#nav {
+    padding: 20px
+}
+
+#header {
+    background-color: lightgoldenrodyellow
+}
+
+#nav {
+    background-color: darkgrey
+}
+
+#article {
+    background-color: brown;
+    text-align: left;
+}
+
+#aside {
+    background-color: orange
+}
+
+#footer {
+    background-color: silver;
+        display: flex;
+}
+
+#nav {
+    display: flex;
+}
+
+    #nav a {
+        text-decoration: none;
+        color: black;
+        flex: 1 1 auto;
+    }
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 1500px;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    #nav, #header {
+        order: -1;
+    }
+
+    #article {
+        flex: 1 1 50%;
+    }
+
+    #aside {
+        flex: 1 1 50%;
+    }
+}
+
